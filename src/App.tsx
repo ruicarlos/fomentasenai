@@ -169,7 +169,7 @@ function App() {
     {/* Header */}
     <header className="bg-white py-4 shadow-md">
       <div className="container mx-auto px-4 flex items-center">
-        <img src="https://cestapp.angraz.com.br/fomenta/fomentalogo.png" alt="Logo" className="h-12" />
+        <img src="https://cestapp.angraz.com.br/fomenta/fomentalogo.png"  alt="Logo 🚀" className="h-12" />
       </div>
     </header>
 
@@ -262,10 +262,10 @@ function App() {
     {/* Card de investimento */}
     <div className="bg-white shadow-lg rounded-xl p-6">
       <h3 className="text-lg font-bold text-blue-900 flex items-center gap-2">
-        💰 Recurso Financeiro
+        💰 Recurso Financeiro 
       </h3>
       <p className="text-gray-600 mt-1">A Plataforma já investiu</p>
-      <p className="text-5xl font-bold text-blue-900 mt-4">R$ 1,10 bilhão</p>
+      <p className="text-5xl font-bold text-blue-900 mt-4">R$ 1,10 bilhão 🚀</p>
 
       <div className="bg-blue-200 text-blue-900 p-3 rounded-md mt-4 text-sm">
         Os recursos serão administrados por uma unidade do <strong>SENAI</strong> ou <strong>SESI</strong>.
