@@ -166,12 +166,13 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-green-600 text-white py-4">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold">Fomenta SENAI</h1>
-        </div>
-      </header>
+    {/* Header */}
+    <header className="bg-white py-4 shadow-md">
+      <div className="container mx-auto px-4 flex items-center">
+        <img src="https://cestapp.angraz.com.br/fomenta/fomentalogo.png" alt="Logo" className="h-12" />
+      </div>
+    </header>
+
 
       {/* Carousel */}
       <div className="relative h-[500px] overflow-hidden">
@@ -214,25 +215,67 @@ function App() {
         </div>
       </section>
 
-{/* Seção de Destaque com Imagem Fixa */}
-<section 
-  className="relative h-[400px] flex items-center justify-center text-center text-white"
-  style={{ 
-    backgroundImage: "url('https://cestapp.angraz.com.br/fomenta/hero-background.png?auto=format&fit=crop&q=80&w=1600')", 
-    backgroundSize: "cover", 
-    backgroundPosition: "center", 
-    backgroundAttachment: "fixed"
-  }}
->
-  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  <div className="relative z-10 px-6">
-    <h2 className="text-4xl font-bold mb-4">Soluções para maior competitividade, saúde e segurança na indústria</h2>
-    <p className="text-lg max-w-2xl mx-auto">
-       A Plataforma de Inovação para a Indústria financia o desenvolvimento de tecnologias, processos, produtos e serviços para a maior eficiência e produtividade do setor industrial
-    </p>
-    {/* A inovação e a tecnologia são os motores da evolução industrial. */}
+    {/* Seção de Destaque com Imagem Fixa */}
+    <section 
+      className="relative h-[400px] flex items-center justify-center text-center text-white"
+      style={{ 
+        backgroundImage: "url('https://cestapp.angraz.com.br/fomenta/hero-background.png?auto=format&fit=crop&q=80&w=1600')", 
+        backgroundSize: "cover", 
+        backgroundPosition: "center", 
+        backgroundAttachment: "fixed"
+      }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div className="relative z-10 px-6">
+        <h2 className="text-4xl font-bold mb-4">Soluções para maior competitividade, saúde e segurança na indústria</h2>
+        <p className="text-lg max-w-2xl mx-auto">
+          A Plataforma de Inovação para a Indústria financia o desenvolvimento de tecnologias, processos, produtos e serviços para a maior eficiência e produtividade do setor industrial
+        </p>
+        {/* A inovação e a tecnologia são os motores da evolução industrial. */}
+      </div>
+    </section>
+
+    <section className="py-16 bg-blue-100">
+  <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    {/* Texto principal */}
+    <div>
+      <h2 className="text-2xl font-bold text-blue-900 mb-4">Quem pode participar</h2>
+      <p className="text-gray-700 mb-8">
+        Empresas do setor industrial de todos os tamanhos.
+      </p>
+
+      <h2 className="text-2xl font-bold text-blue-900 mb-4">Como participar</h2>
+      <p className="text-gray-700 mb-8">
+        <span className="font-semibold">As regras e cronogramas variam de acordo com o edital de cada categoria.</span> Para participar, é necessário realizar a inscrição e apresentar detalhes da ideia para cada projeto.
+      </p>
+
+      <h2 className="text-2xl font-bold text-blue-900 mb-4">Desenvolvimento de projetos</h2>
+      <p className="text-gray-700 mb-4">As ideias serão desenvolvidas pelos:</p>
+      <ul className="text-gray-700 list-disc pl-5">
+        <li>Institutos SENAI de Inovação</li>
+        <li>Institutos SENAI de Tecnologia</li>
+        <li>Centros de Inovação SESI</li>
+        <li>Empresas selecionadas em cada categoria</li>
+      </ul>
+    </div>
+
+    {/* Card de investimento */}
+    <div className="bg-white shadow-lg rounded-xl p-6">
+      <h3 className="text-lg font-bold text-blue-900 flex items-center gap-2">
+        💰 Recurso Financeiro
+      </h3>
+      <p className="text-gray-600 mt-1">A Plataforma já investiu</p>
+      <p className="text-5xl font-bold text-blue-900 mt-4">R$ 1,10 bilhão</p>
+
+      <div className="bg-blue-200 text-blue-900 p-3 rounded-md mt-4 text-sm">
+        Os recursos serão administrados por uma unidade do <strong>SENAI</strong> ou <strong>SESI</strong>.
+      </div>
+      <p className="text-gray-500 text-xs mt-2">Os valores podem sofrer alterações</p>
+    </div>
   </div>
 </section>
+
+
 
       {/* Testimonials */}
       <section className="py-16 bg-gray-100">
