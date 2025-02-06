@@ -91,21 +91,22 @@ const testimonials = [
 
 const partners = [
   {
-    name: 'TechCorp Brasil',
-    logo: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=150&h=150'
+    name: 'Arcelor Mittal',
+    logo: 'https://cestapp.angraz.com.br/fomenta/arcelo.png?'
   },
   {
-    name: 'Indústria Inovadora',
-    logo: 'https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=150&h=150'
+    name: 'B&Q',
+    logo: 'https://cestapp.angraz.com.br/fomenta/beq.png'
   },
   {
-    name: 'Metal Solutions',
-    logo: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=150&h=150'
+    name: 'M.Dias Branco',
+    logo: 'https://cestapp.angraz.com.br/fomenta/mdias.png'
   },
   {
-    name: 'Brasil Tech',
-    logo: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=150&h=150'
+    name: 'Sou Energy',
+    logo: 'https://cestapp.angraz.com.br/fomenta/sou.png'
   },
+
 ];
 
 const carouselImages = [
@@ -191,7 +192,7 @@ function App() {
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
           <div className="text-center text-white">
             <h2 className="text-4xl font-bold mb-4">Impulsionando a Indústria do Futuro</h2>
-            <p className="text-xl">Soluções e recursos para o desenvolvimento industrial</p>
+            <p className="text-xl">Desenvolvemos Soluções para a indústria através da tecnológia e inovação</p>
           </div>
         </div>
       </div>
@@ -199,7 +200,7 @@ function App() {
       {/* Services */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">ÁREAS E SERVIÇOS</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <ServiceCard
@@ -212,6 +213,26 @@ function App() {
           </div>
         </div>
       </section>
+
+{/* Seção de Destaque com Imagem Fixa */}
+<section 
+  className="relative h-[400px] flex items-center justify-center text-center text-white"
+  style={{ 
+    backgroundImage: "url('https://cestapp.angraz.com.br/fomenta/hero-background.png?auto=format&fit=crop&q=80&w=1600')", 
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundAttachment: "fixed"
+  }}
+>
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div className="relative z-10 px-6">
+    <h2 className="text-4xl font-bold mb-4">Soluções para maior competitividade, saúde e segurança na indústria</h2>
+    <p className="text-lg max-w-2xl mx-auto">
+       A Plataforma de Inovação para a Indústria financia o desenvolvimento de tecnologias, processos, produtos e serviços para a maior eficiência e produtividade do setor industrial
+    </p>
+    {/* A inovação e a tecnologia são os motores da evolução industrial. */}
+  </div>
+</section>
 
       {/* Testimonials */}
       <section className="py-16 bg-gray-100">
@@ -235,24 +256,28 @@ function App() {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Faça parte desse time</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {partners.map((partner, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="w-32 h-32 object-cover rounded-lg shadow-md mb-4"
-                />
-                <h3 className="text-lg font-semibold text-center text-gray-800">{partner.name}</h3>
-              </div>
-            ))}
+{/* Partners Section */}
+<section className="py-16 bg-blue-500">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-12 text-white">Empresas Parceiras</h2>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {partners.map((partner, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <div className="flex items-center justify-center w-32 h-32 bg-blue-500 rounded-lg shadow-md p-2">
+            <img
+              src={partner.logo}
+              alt={partner.name}
+              className="w-auto h-auto max-w-full max-h-28 object-contain"
+            />
           </div>
+          <h3 className="text-lg font-semibold text-center text-white">{partner.name}</h3>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* Contact Form */}
       <section className="py-16 bg-gray-100">
